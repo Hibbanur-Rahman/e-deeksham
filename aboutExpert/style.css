@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ==================================================== Header start ====================================================*/
+.heading-section {
+    background-color: rgb(236, 249, 243);
+}
+
+.header {
+    display: flex;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(236, 249, 243);
+    padding-top: 20px;
+    height: 105px;
+    color: rgb(10, 10, 133);
+}
+
+.header .logo-photo {
+    margin-left: 22px;
+    margin-right: 24px;
+}
+
+.left-div {
+    display: flex;
+    width: 71%;
+    padding-left: 71px;
+}
+
+.right-div {
+    display: flex;
+    width: 25%;
+}
+
+.head-title {
+    width: 37%;
+    margin-top: 10px;
+}
+
+/*============================================================= Header end ========================================================*/
+
+
+/*============================================================= Navbar Start ========================================================*/
+
+.navbar {
+    display: flex;
+    height: 75px;
+  background-color: #14539a;
+    font-size: 18px;
+    padding-top: 15px;
+    color: white;
+    box-sizing: border-box;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.navlist {
+    padding-left: 90px;
+    width: 75%;
+}
+.navlist .list-item{
+    
+    display: flex;
+    box-sizing: border-box;
+}
+.navlist .list-item a{
+    text-decoration: none;
+}
+.navlist .list-item .item{
+
+    margin-left: 20px;
+    margin-right: 15px;
+    padding-top: 13px;
+    padding-left: 6px;
+    padding-right: 6px;
+    height: 50px;
+    width: fit-content;
+    /* min-width: 90px; */
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+    color:white;
+}
+.navlist .list-item .item:hover{
+    background-color: white;
+    color: rgb(8, 8, 111);
+}
+
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    margin-top: -13px;
+
+}
+
+.nav-btn button {
+    background: none;
+    font-size: 18px;
+    border-radius: 10px;
+    color: white;
+    border-color: aliceblue;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-btn button:hover {
+    background-color: aliceblue;
+    color: rgb(10, 10, 133);
+}
+
+
+
+.dropdown {
+    width:90px;
+    border-radius: 5px;
+
+}
+/* .dropdown:hover{
+    background-color: white;
+    color:#002868
+} */
+.dropdown button {
+    
+    background: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: -2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.dropdown button:hover {
+    background-color: white;
+    color: rgb(10, 10, 133);
+}
+.dropdown-options {
+    display: none;
+    position: absolute;
+    color: white;
+    z-index: 2;
+}
+.dropdown:hover .dropdown-options {
+    margin-top: 1px;
+    display: flex;
+    flex-direction: column;
+  background-color: #14539a;
+    width: 130px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: white;
+    /* border: 1px solid black; */
+}
+
+.dropdown:hover .dropdown-options a {
+    text-decoration: none;
+    padding-left: 10px;
+    color: white;
+}
+
+.dropdown:hover .dropdown-options a:hover {
+    background-color: rgb(253, 253, 253);
+    color: rgb(10, 10, 133);
+}
+
+
+
+/*============================================================= Navbar end ========================================================*/
+
+
+/*============================================================= Our Team start ========================================================*/
+
+.ourteam {
+    /* width: 100%;
+    height:100% ; */
+    height: auto;
+    width: auto;
+    background: #fff;
+}
+
+.ourteam img {
+    width: 100%;
+    height: 310px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+
+
+/*============================================================= Our Team end ========================================================*/
+.experts {
+    height: 100%;
+    width: 100%;
+}
+
+.head h1 {
+    font-family: 'Roboto',sans-serif;
+    padding: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: 0.05em;
+    color: #000000;
+    text-align: center;
+    padding-top: 90px;
+}
+
+.paragraph p {
+    width: 846px;
+    height: 72px;
+    margin: auto;
+    font-family: 'Roboto',sans-serif;
+    padding: 0;;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #4D4D4D;
+    padding-top: 15px;
+}
+
+.member {
+    width: 1073px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+    padding-bottom: 30px;
+    padding-top: 80px;
+ 
+}
+
+.member .m1 {
+    height: 389px;
+    width: 250px;
+    border-radius: 12px;
+}
+
+.m1 img {
+    width: 250px;
+    height: 300px;
+    border-radius: 12px;
+
+}
+
+.name {
+    height: 90px;
+    width: 250px;
+    line-height: 20px;
+}
+
+.name1{
+    height: 90px;
+    width: 250px;
+    line-height: 20px;
+    padding-top: 50px;
+    position: absolute;
+    line-height: 25px;
+    display: none;
+    padding: 15px;
+}
+.name h4,p {
+    text-align: center;
+}
+.name1 h4,p {
+    text-align: center;
+}
+.s-icons {
+    line-height: 58px;
+    text-align: center;
+}
+.s-icons1 {
+    line-height: 58px;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+.m1 .name1 hr{
+    height: 1px;
+    width: 220px;
+    color: white;
+    margin-bottom: 20px;
+    
+}
+.name .s-icons i {
+    width: 37px;
+    height: 33px;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: rgb(172,193,247);
+    font-size: 23px;
+    color:rgb(10,36,99);
+
+}
+.name .s-icons svg{
+    width: 37px;
+    height: 33px;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color:  rgb(172,193,247);
+    font-size: 23px;
+    margin-bottom: -9px;
+    color: #14539a;
+}
+.name1 .s-icons1 i {
+    width: 37px;
+    height: 33px;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: rgb(172,193,247);
+    font-size: 23px;
+    color: #14539a;
+
+}
+.name1 .s-icons1 svg{
+    width: 37px;
+    height: 33px;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color:  rgb(172,193,247);
+    font-size: 23px;
+    margin-bottom: -9px;
+    color: #14539a;
+}
+
+.m1:hover  img{
+    opacity:0;
+}
+.m1:hover .name1{
+    display: block;
+    cursor: pointer;
+}
+.m1:hover{
+    background-color: #14539a;
+    color: white;
+}
+.m1:hover .name{
+    display: none;
+}
+ .s-icons1 i:hover{
+    background-color: #14539a;
+    cursor: pointer;
+    color: rgb(172,193,247);
+}
+.s-icons1 svg:hover{
+    background-color: #14539a;
+    cursor: pointer;
+    color: rgb(172,193,247);
+}
+.s-icons1 svg:hover path{
+    fill: rgb(172,193,247);
+    stroke: rgb(172,193,247);
+    
+}
+/*============================================================= Expert Team End ========================================================*/
+
+
+
+
+
+/*============================================================= Footer Section start ========================================================*/
+
+
+.footer {
+   background-color: #14539a;
+    color: white;
+    margin: auto;
+    width: 100%;
+    height: 450px;
+    margin-top: 100px;
+    padding-top: 50px;
+}
+
+.footer-upper {
+    display: flex;
+    margin: auto;
+    width: 80%;
+}
+
+.footer-first {
+    width: 30%;
+    margin: auto;
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+.footer-first p {
+    opacity: 0.9;
+}
+
+.footer-first .footer-image {
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.footer-first .footer-image img {
+    width: 150px;
+    height: 100px;
+}
+
+.footer-second {
+    width: 10%;
+    margin: auto;
+    margin-top: 0px;
+}
+
+.footer-second ul {
+    margin-top: 20px;
+}
+
+.footer-second li {
+    list-style: none;
+    opacity: 0.9;
+    height: 35px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.footer-third {
+    width: 23%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.footer-third div {
+    display: flex;
+    align-items: center;
+    opacity: 0.9;
+    margin-top: 20px;
+}
+
+.footer-third div i {
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.footer-third h3:nth-child(5) {
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.footer-third i {
+    font-size: 30px;
+    color: #a9c5f6;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.footer-lower {
+    display: flex;
+    border-top: 1px solid white;
+    width: 73%;
+    margin: auto;
+    font-size: 15px;
+}
+
+.footer-lower div {
+    width: 50%;
+}
+
+.face:hover {
+    color: #003cff;
+}
+
+.tweet:hover {
+    color: #00ccff;
+}
+
+.yt:hover {
+    color: #ff0e0e;
+}
+
+
+/*============================================================= Footer Section End ========================================================*/

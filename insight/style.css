@@ -1,0 +1,544 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding:0;
+    margin:0;
+}
+
+
+/* ==================================================== Header start ====================================================*/
+.heading-section {
+    background-color:  rgb(236, 249, 243);
+}
+
+.header {
+    display: flex;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color:  rgb(236, 249, 243);
+    padding-top: 20px;
+    height: 105px;
+    color: rgb(10, 10, 133);
+    margin-bottom: 20px;
+}
+
+.header .logo-photo {
+    margin-left: 22px;
+    margin-right: 24px;
+}
+
+.left-div {
+    display: flex;
+    width: 68%;
+    padding-left: 71px;
+}
+
+.right-div {
+    display: flex;
+    width: 25%;
+}
+
+.head-title {
+    width: 37%;
+    margin-top: 10px;
+}
+
+/*============================================================= Header end ========================================================*/
+
+
+/*============================================================= Navbar Start ========================================================*/
+
+.navbar {
+    display: flex;
+    height: 75px;
+  background-color: #14539a;
+    font-size: 18px;
+    padding-top: 15px;
+    color: white;
+    box-sizing: border-box;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.navlist {
+    padding-left: 90px;
+    width: 75%;
+}
+.navlist .list-item{
+    
+    display: flex;
+    box-sizing: border-box;
+}
+.navlist .list-item a{
+    text-decoration: none;
+}
+.navlist .list-item .item{
+
+    margin-left: 20px;
+    margin-right: 15px;
+    padding-top: 13px;
+    padding-left: 6px;
+    padding-right: 6px;
+    height: 50px;
+    width: fit-content;
+    /* min-width: 90px; */
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+    color:white;
+}
+.navlist .list-item .item:hover{
+    background-color: white;
+    color: rgb(8, 8, 111);
+}
+
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    margin-top: -8px;
+
+}
+
+.nav-btn button {
+    background: none;
+    font-size: 18px;
+    border-radius: 10px;
+    color: white;
+    border-color: aliceblue;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-btn button:hover {
+    background-color: aliceblue;
+    color: rgb(10, 10, 133);
+}
+
+
+
+.dropdown {
+    width:90px;
+    border-radius: 5px;
+
+}
+/* .dropdown:hover{
+    background-color: white;
+    color:#002868
+} */
+.dropdown button {
+    
+    background: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: -2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.dropdown button:hover {
+    background-color: white;
+    color: rgb(10, 10, 133);
+}
+.dropdown-options {
+    display: none;
+    position: absolute;
+    color: white;
+    z-index: 2;
+}
+.dropdown:hover .dropdown-options {
+    margin-top: 1px;
+    display: flex;
+    flex-direction: column;
+  background-color: #14539a;
+    width: 130px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: white;
+    /* border: 1px solid black; */
+}
+
+.dropdown:hover .dropdown-options a {
+    text-decoration: none;
+    padding-left: 10px;
+    color: white;
+}
+
+.dropdown:hover .dropdown-options a:hover {
+    background-color: rgb(253, 253, 253);
+    color: rgb(10, 10, 133);
+}
+
+
+
+/*============================================================= Navbar end ========================================================*/
+
+
+/*============================================================= Home photo section start ========================================================*/
+.home-photo{
+    width: 100%;
+    height:400px;
+}
+.home-photo h1{
+    position: absolute;
+    text-align: center;
+    color: white;
+    margin-top: 190px;
+    margin-left: 47%;
+    font-size: 45px;
+}
+.home-photo img{
+    width:100%;
+    height:100%;
+}
+
+/*============================================================= Home photo section End ========================================================*/
+
+/*============================================================= Paragraph section start ========================================================*/
+
+.paragarph-section{
+    display:flex;
+    padding-top:170px;
+    padding-bottom: 170px;
+}
+.paragarph-section div{
+    width:50%;
+}
+.paragarph-section h1{
+    width: 80%;
+    margin: auto;
+    font-size: 45px;
+}
+.paragarph-section p{
+    width:80%;
+    margin-left: 37px;
+    color: rgb(120,120,120);
+    line-height: 30px;
+}
+/*============================================================= Paragraph section end ========================================================*/
+
+
+/*============================================================= News-navbar section start ========================================================*/
+.news-navbar{
+    width:37%;
+    margin: auto;
+    height:50px;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.news-navbar ul{
+    display: flex;
+    list-style: none;
+    width:100%;
+    height:100%;
+    
+}
+.news-navbar ul li{
+    width:25%;
+    height:100%;
+    text-align: center;
+    padding-top: 16px;
+    font-size: 18px;
+    border: 1px solid black;
+}
+.news-navbar ul li:nth-child(1){
+    background-color:rgb(8, 8, 111);
+    color:white;
+}
+.news-navbar ul li:hover{
+  background-color: #14539a;
+    color:white;
+}
+/*============================================================= News-navbar section end ========================================================*/
+
+/*============================================================= tweets-section Start ========================================================*/
+.tweets-section{
+    display:flex;
+    width:90%;
+    margin: auto;
+    padding-top: 80px;
+}
+.tweets-section .col1{
+    width:30%;
+    margin: auto;
+}
+.tweets-section .col2{
+    width:30%;
+    margin: auto;
+}
+.tweets-section .col3{
+    width:30%;
+    margin: auto;
+}
+.first-box{
+    width:100%;
+    box-shadow: 3px 3px 3px 3px rgb(216, 216, 216);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.first-box:hover{
+    transform: scale(1.04);
+    transition: all 0.5s ease-in-out;
+}
+.first-box img{
+    width:100%;
+    height:250px;
+}
+.first-box div:nth-child(2){
+    padding-left: 20px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.first-box div p:nth-child(1){
+    color:  rgb(1, 1, 42);
+    font-size: 20px;
+}
+.first-box div h2{
+    margin-top:26px ;
+    line-height: 35px;
+}
+.first-box div p:nth-child(3){
+    margin-top: 8px;
+    margin-bottom: 25px;
+    font-size: 19px;
+    color:rgb(0, 0, 0);
+}
+.first-box div p:nth-child(4){
+    font-size: 18px;
+    color:rgba(8, 8, 8, 0.793);
+    line-height: 25px;
+}
+.first-box div p:nth-child(5){
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+.second-box{
+    width: 98%;
+    box-shadow: 3px 3px 3px 3px rgb(216, 216, 216);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.second-box:hover{
+    transform: scale(1.04);
+    transition: all 0.5s  ease-in-out;
+}
+.second-box div:nth-child(1){
+    display:flex;
+    align-items: center;
+}
+.second-box div:nth-child(1) img{
+    width: 50px;
+    height:50px;
+    margin-right:30px;
+}
+.second-box div:nth-child(1) i{
+    color:rgba(9, 9, 244, 0.663);
+    margin-left:10px;
+    font-size: 22px;
+}
+.second-box div:nth-child(2){
+    padding-top: 4px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+}
+.second-box div:nth-child(2) p{
+    line-height: 23px;
+    color:rgb(118, 110, 110);
+    padding-bottom: 8px;
+}
+
+.third-box{
+    width: 100%;
+    box-shadow: 3px 3px 3px 3px rgb(216, 216, 216);
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.third-box:hover{
+    transform: scale(1.04);
+    transition: all 0.5s ease-in-out;
+}
+.third-box p:nth-child(1){
+    color:rgb(1, 1, 75);
+    margin-bottom:20px;
+    font-size: 17px;
+}
+.third-box h2{
+    line-height: 33px;
+    margin-bottom: 10px;
+}
+.third-box p:nth-child(3){
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+.third-box p:nth-child(4){
+    line-height: 25px;
+    font-size: 19px;
+    color: rgba(97, 92, 92, 0.726);
+    margin-bottom: 20px;
+}
+.third-box p:nth-child(5){
+    font-size: 21px;
+}
+
+.tweets-section .col2 .second-box{
+    margin-top: 0px;
+}
+.tweets-section .col3 .third-box{
+    margin-top: -25px;
+}
+
+.next-page{
+    width:20%;
+    display:flex;
+    margin: auto;
+    margin-top: 50px;
+}
+.next-page div{
+    width:70px;
+    margin: auto;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    height:60px;
+    padding-top: 10px;
+}
+.next-page div:hover{
+    background-color:rgb(5, 5, 116);
+    color:white;
+}
+.next-page div:nth-child(1){
+    background-color:rgb(5, 5, 116);
+    color:white;
+}
+
+/*============================================================= tweets-section End ========================================================*/
+
+/*============================================================= Footer Section start ========================================================*/
+
+.footer{
+   background-color: #14539a;
+    color:white;
+    margin: auto;
+    width:100%;
+    height:450px;
+    margin-top: 100px;
+    padding-top: 50px;
+}
+
+.footer-upper{
+    display:flex;
+    margin: auto;
+    width:80%;
+}
+.footer-first{
+    width:30%;
+    margin: auto;
+    font-size: 18px;
+    margin-top: 0px;
+}
+.footer-first p{
+    opacity: 0.9;
+}
+.footer-first .footer-image{
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+.footer-first .footer-image img{
+    width:150px;
+    height:100px;
+}
+
+.footer-second{
+    width:10%;
+    margin: auto;
+    margin-top: 0px;
+}
+.footer-second ul{
+    margin-top: 20px;
+}
+.footer-second li{
+    list-style: none;
+    opacity: 0.9;
+    height:35px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.footer-third{
+    width:23%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.footer-third div{
+    display:flex;
+    align-items: center;
+    opacity: 0.9;
+    margin-top: 20px;
+}
+.footer-third div i{
+    margin-right: 20px;
+    font-size: 25px;
+}
+.footer-third h3:nth-child(5){
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+.footer-third i{
+    font-size: 30px;
+    color: #a9c5f6;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.footer-lower{
+    display:flex;
+    border-top: 1px solid white;
+    width: 73%;
+    margin: auto;
+    font-size: 15px;
+}
+.footer-lower div{
+    width: 50%;
+}
+.face:hover {
+    color: #003cff;
+}
+
+.tweet:hover {
+    color: #00ccff;
+}
+
+.yt:hover {
+    color: #ff0e0e;
+}
+
+
+/*============================================================= Footer Section End ========================================================*/
