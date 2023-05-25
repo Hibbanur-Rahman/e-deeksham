@@ -1,0 +1,677 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* ==================================================== Header start ====================================================*/
+.heading-section {
+    background-color: rgb(236, 249, 243);
+}
+
+.header {
+    display: flex;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(236, 249, 243);
+    padding-top: 20px;
+    height: 105px;
+    color: rgb(10, 10, 133);
+}
+
+.header .logo-photo {
+    margin-left: 22px;
+    margin-right: 24px;
+}
+
+.left-div {
+    display: flex;
+    width: 71%;
+    padding-left: 71px;
+}
+
+.right-div {
+    display: flex;
+    width: 25%;
+}
+
+.head-title {
+    width: 37%;
+    margin-top: 10px;
+}
+
+/*============================================================= Header end ========================================================*/
+
+
+/*============================================================= Navbar Start ========================================================*/
+
+.navbar {
+    display: flex;
+    height: 75px;
+  background-color: #14539a;
+    font-size: 18px;
+    padding-top: 15px;
+    color: white;
+    box-sizing: border-box;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.navlist {
+    padding-left: 90px;
+    width: 75%;
+}
+.navlist .list-item{
+    
+    display: flex;
+    box-sizing: border-box;
+}
+.navlist .list-item a{
+    text-decoration: none;
+}
+.navlist .list-item .item{
+
+    margin-left: 20px;
+    margin-right: 15px;
+    padding-top: 14px;
+    padding-left: 6px;
+    padding-right: 6px;
+    height: 50px;
+    width: fit-content;
+    /* min-width: 90px; */
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+    color:white;
+}
+.navlist .list-item .item:hover{
+    background-color: white;
+    color: rgb(8, 8, 111);
+}
+
+
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    margin-top: -8px;
+
+}
+
+.nav-btn button {
+    background: none;
+    font-size: 18px;
+    border-radius: 10px;
+    color: white;
+    border-color: aliceblue;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-btn button:hover {
+    background-color: aliceblue;
+    color: rgb(10, 10, 133);
+}
+
+
+
+.dropdown {
+    width:90px;
+    border-radius: 5px;
+
+}
+/* .dropdown:hover{
+    background-color: white;
+    color:#002868
+} */
+.dropdown button {
+    
+    background: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: -2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.dropdown button:hover {
+    background-color: white;
+    color: rgb(10, 10, 133);
+}
+.dropdown-options {
+    display: none;
+    position: absolute;
+    color: white;
+    z-index: 2;
+}
+.dropdown:hover .dropdown-options {
+    margin-top: 1px;
+    display: flex;
+    flex-direction: column;
+  background-color: #14539a;
+    width: 130px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: white;
+    /* border: 1px solid black; */
+}
+
+.dropdown:hover .dropdown-options a {
+    text-decoration: none;
+    padding-left: 10px;
+    color: white;
+}
+
+.dropdown:hover .dropdown-options a:hover {
+    background-color: rgb(253, 253, 253);
+    color: rgb(10, 10, 133);
+}
+
+
+
+/*============================================================= Navbar end ========================================================*/
+
+/*============================================================= Our Team start ========================================================*/
+
+.ourteam {
+    /* width: 100%;
+    height:100% ; */
+    height: auto;
+    width: auto;
+    background: #fff;
+}
+
+.ourteam img {
+    width: 100%;
+    height: 300px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+
+
+/*============================================================= Our Team end ========================================================*/
+
+
+/*============================================================= Our leaders start ========================================================*/
+
+.OurLeaders {
+    height: auto;
+    width: auto;
+    background: #fff;
+}
+
+.OurLeaders h1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+    margin-top: 5%;
+}
+
+.leaders1 {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.paragraph {
+    padding-left: 24px;
+    padding-right: 16%;
+    margin-top: 7%;
+    width: 60%
+}
+.icon{
+    margin-top: 3%;
+    display: flex;
+}
+.paragraph .icon i{
+    width: 37px;
+    height: 33px;
+    padding-top: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: rgb(135 200 221);
+    font-size: 23px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+    
+.paragraph .icon i:hover{
+    background-color: rgb(6, 6, 73);
+    color:  rgb(135 200 221);
+}
+.paragraph .icon svg{
+    width: 37px;
+    height: 33px;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color:  rgb(135 200 221);
+    font-size: 23px;
+    margin-bottom: -7px;
+}
+.paragraph .icon svg:hover{
+    background-color: rgb(6, 6, 73);
+    fill: rgb(135 200 221);
+}
+.paragraph p {
+    margin-top: 3%;
+    text-align: justify;
+    line-height: 150%;
+}
+
+.paragraph h5 {
+    margin-top: 2%;
+}
+
+.paragraph hr {
+    height: 1.5px;
+    width: 177px;
+    border-width: 0;
+    color: darkblue;
+    background-color: darkblue;
+    margin-top: 20px;
+}
+
+
+
+.L1 {
+    width: 40%;
+    margin-top: 85px;
+    padding-top: 65px;
+}
+
+.L1 .l1-image {
+    width: 360px;
+    height: 360px;
+    /* transform: rotate(45deg); */
+    overflow: hidden;
+    margin: auto;
+    border-radius: 30px;
+}
+
+.L1 img {
+    width: 360px;
+    height: 360px;
+    /* transform: rotate(-45deg); */
+    position: absolute;
+    /* margin-top: -61px;
+    margin-left: -63px; */
+}
+
+
+
+.leaders2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.paragraph1 {
+    width: 73%;
+    padding-left: 11%;
+    /* padding-right: 17%; */
+    margin-top: 6%;
+}
+
+.paragraph1 p {
+    margin-top: 3%;
+    text-align: justify;
+    line-height: 150%;
+}
+
+.paragraph1 h5 {
+    margin-top: 2%;
+}
+
+.paragraph1 hr {
+    height: 1.5px;
+    width: 177px;
+    border-width: 0;
+    color: darkblue;
+    background-color: darkblue;
+    margin-top: 20px;
+}
+
+.paragraph1 .icon i{
+    width: 37px;
+    height: 33px;
+    padding-top: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: rgb(135 200 221);
+    font-size: 23px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+    
+.paragraph1 .icon i:hover{
+    background-color: rgb(6, 6, 73);
+    color:  rgb(135 200 221);
+}
+.paragraph1 .icon svg{
+    width: 37px;
+    height: 33px;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color:  rgb(135 200 221);
+    font-size: 23px;
+    margin-bottom: -7px;
+}
+.paragraph1 .icon svg:hover{
+    background-color: rgb(6, 6, 73);
+    color:  rgb(135 200 221);
+}
+svg:hover path{
+    fill:rgb(135 200 221) !important;
+    stroke:rgb(135 200 221) !important;
+}
+.L2 {
+    width: 40%;
+    margin-top: 85px;
+    /* padding-right: 17%; */
+    padding-top: 105px;
+}
+
+.L2 .l2-image {
+    width: 360px;
+    height: 360px;
+    /* transform: rotate(45deg); */
+    overflow: hidden;
+    margin: auto;
+    border-radius: 30px;
+}
+
+.L2 img {
+    width: 360px;
+    height: 360px;
+    /* transform: rotate(-45deg); */
+    position: absolute;
+    /* margin-top: -61px;
+    margin-left: -63px; */
+}
+
+
+/*============================================================= Our leaders end ========================================================*/
+
+
+/*============================================================= Our Team start ========================================================*/
+
+.all-members {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(167, 240, 200,0.22);
+    margin-top: 10%;
+}
+.all-members h1{
+    text-align: center;
+    margin-bottom: 4%;
+    padding-top: 3%;
+}
+.setting{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    margin-right: 10%;
+    justify-content: center;
+}
+.m{
+    width: 300px;
+    height: 425px;
+    margin-left: 35px;
+    margin-bottom: 25px;
+    background-color: white;
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+.m:hover .m-image img{
+    opacity:0.2;
+}
+.m:hover .name{
+    background-color: rgb(6, 6, 73);
+    color: white;
+    overflow: hidden;
+    height: 100%;
+}
+.m:hover .s-icons{
+    display: block;
+    cursor: pointer;
+    z-index: 2;
+}
+.m-image{
+    width: 300px;
+    height: 350px;
+    /* border-radius: 13px; */
+
+}
+.m-image .s-icons{
+    position: absolute;
+    margin-left: 7%;
+    margin-top: 14%;
+    display: none;
+}
+.m-image .s-icons i{
+    width: 37px;
+    height: 33px;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color:  rgb(135 200 221);
+    font-size: 23px;
+}
+.m-image .s-icons i:hover{
+   background-color: #14539a;
+    color: white;
+}
+.m-image img{
+    width: 300px;
+    height: 350px;
+    border-radius: 13px;
+}
+.name{
+    text-align: center;
+    padding-top: 20px;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+
+/*============================================================= Our Team end ========================================================*/
+
+
+/*============================================================= supporting Team start ========================================================*/
+
+.supportingTeam h1 {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.supportingTeam {
+    height: 100%;
+    width: 100%;
+}
+.mannage{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+.s{
+    width: 300px;
+    height: 275px;
+    margin: auto;
+    margin-bottom: 25px;
+    background-color: white;
+    border-radius: 13px;
+}
+.s-image{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+
+}
+.s-image .s-icons{
+    position: absolute;
+    margin-left: 24px;
+    margin-top: 81px;
+    display: none;
+    z-index:2;
+}
+.s-image .s-icons i{
+    width: 37px;
+    height: 33px;
+    padding-top: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: rgb(135 200 221);
+    font-size: 23px;
+    padding-left: 10px;
+}
+.s-image .s-icons i:hover{
+    background-color: rgb(1, 1, 35);
+    color:white;
+}
+.s-image img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.s:hover .s-image img{
+    opacity:0.2;
+}
+.s:hover .s-icons{
+    display: block;
+    cursor: pointer;
+}
+.name1{
+    /* text-align: center; */
+    padding-top: 20px;
+    line-height: 25px;
+    font-size: 14px;
+    /* padding-right: 89px; */
+    text-align: center;
+
+}
+
+
+/*============================================================= Footer Section start ========================================================*/
+
+.footer{
+   background-color: #14539a;
+    color:white;
+    margin: auto;
+    width:100%;
+    height:450px;
+    margin-top: 100px;
+    padding-top: 50px;
+}
+
+.footer-upper{
+    display:flex;
+    margin: auto;
+    width:80%;
+}
+.footer-first{
+    width:30%;
+    margin: auto;
+    font-size: 18px;
+    margin-top: 0px;
+}
+.footer-first p{
+    opacity: 0.9;
+}
+.footer-first .footer-image{
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+.footer-first .footer-image img{
+    width:150px;
+    height:100px;
+}
+
+.footer-second{
+    width:10%;
+    margin: auto;
+    margin-top: 0px;
+}
+.footer-second ul{
+    margin-top: 20px;
+}
+.footer-second li{
+    list-style: none;
+    opacity: 0.9;
+    height:35px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.footer-third{
+    width:23%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.footer-third div{
+    display:flex;
+    align-items: center;
+    opacity: 0.9;
+    margin-top: 20px;
+}
+.footer-third div i{
+    margin-right: 20px;
+    font-size: 25px;
+}
+.footer-third h3:nth-child(5){
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+.footer-third i{
+    font-size: 30px;
+    color: #a9c5f6;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.footer-lower{
+    display:flex;
+    border-top: 1px solid white;
+    width: 73%;
+    margin: auto;
+    font-size: 15px;
+}
+.footer-lower div{
+    width: 50%;
+}
+.face:hover {
+    color: #003cff;
+}
+
+.tweet:hover {
+    color: #00ccff;
+}
+
+.yt:hover {
+    color: #ff0e0e;
+}
+
+
+/*============================================================= Footer Section End ========================================================*/

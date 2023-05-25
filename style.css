@@ -1,0 +1,1420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ==================================================== Header start ====================================================*/
+.heading-section {
+    /* background-color: rgb(236, 249, 243); */
+    background-color: rgb(238, 243, 253)
+}
+
+.header {
+    display: flex;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(236, 249, 243);
+    padding-top: 16px;
+    height: 96px;
+    /* color: rgb(10, 10, 133); */
+    color: #14539a;
+    margin-bottom: 20px;
+}
+
+.header .logo-photo {
+    margin-left: 22px;
+    margin-right: 24px;
+}
+
+.left-div {
+    display: flex;
+    width: 68%;
+    padding-left: 71px;
+}
+
+.right-div {
+    display: flex;
+    width: 25%;
+}
+
+.head-title {
+    width: 37%;
+    margin-top: 10px;
+}
+
+/*============================================================= Header end ========================================================*/
+
+
+/*============================================================= Navbar Start ========================================================*/
+
+.navbar {
+    display: flex;
+    height: 75px;
+    background-color: #14539a;
+    font-size: 18px;
+    padding-top: 15px;
+    color: white;
+    box-sizing: border-box;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.navlist {
+    padding-left: 90px;
+    width: 75%;
+}
+
+.navlist .list-item {
+
+    display: flex;
+    box-sizing: border-box;
+}
+
+.navlist .list-item a {
+    text-decoration: none;
+}
+
+.navlist .list-item .item {
+
+    margin-left: 20px;
+    margin-right: 15px;
+    padding-top: 8px;
+    padding-left: 6px;
+    padding-right: 6px;
+    height: 50px;
+    width: fit-content;
+    /* min-width: 90px; */
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.navlist .list-item .item:hover {
+    background-color: white;
+    color: #14539a;
+}
+
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    margin-top: -8px;
+
+}
+
+.nav-btn button {
+    background: none;
+    font-size: 18px;
+    border-radius: 10px;
+    color: white;
+    border-color: aliceblue;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-btn button:hover {
+    background-color: aliceblue;
+    color: #14539a;
+}
+
+
+
+.dropdown {
+    width: 90px;
+    border-radius: 5px;
+
+}
+
+/* .dropdown:hover{
+    background-color: white;
+    color:#002868
+} */
+.dropdown button {
+
+    background: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: -2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.dropdown button:hover {
+    background-color: white;
+    color: #14539a;
+}
+
+.dropdown-options {
+    display: none;
+    position: absolute;
+    color: white;
+    z-index: 2;
+}
+
+.dropdown:hover .dropdown-options {
+    margin-top: 1px;
+    display: flex;
+    flex-direction: column;
+    background-color: #14539a;
+    width: 130px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: white;
+    /* border: 1px solid black; */
+}
+
+.dropdown:hover .dropdown-options a {
+    text-decoration: none;
+    padding-left: 10px;
+    color: white;
+}
+
+.dropdown:hover .dropdown-options a:hover {
+    background-color: rgb(253, 253, 253);
+    color: #14539a;
+}
+
+.hamburger {
+    width: 60px;
+    height: 90px;
+    display: none;
+    position: absolute;
+    margin-top: 22px;
+    margin-left: 1184px;
+    z-index: 2;
+
+}
+
+.hamburger div {
+    width: 100%;
+    height: 6px;
+    background-color: #eef3f3;
+    margin-top: 10px;
+}
+
+/*============================================================= Navbar end ========================================================*/
+
+/*============================================================= Crousal start ========================================================*/
+
+.crousal {
+    width: 100%;
+    height: 600px;
+}
+
+.main-container {
+    /* width: 500px;
+    height: 500px; */
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 3px grey;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    /* position:absolute; */
+    transition: 1s;
+}
+
+.slide h1 {
+    margin-top: -250px;
+    text-align: center;
+    color: white;
+}
+
+.slide img {
+    width: 1519px;
+    height: 600px;
+}
+
+.prev {
+    float: left;
+    font-size: 50px;
+    height: 70px;
+    border: none;
+    margin-bottom: -69px;
+    top: 300px;
+    position: relative;
+    z-index: 2;
+    background: none;
+    cursor: pointer;
+    left: 100px;
+}
+
+.next {
+    font-size: 50px;
+    height: 70px;
+    margin: auto;
+    border: none;
+    background: none;
+    z-index: 2;
+    float: right;
+    position: relative;
+    bottom: 300px;
+    cursor: pointer;
+    right: 100px;
+}
+
+/*============================================================= Crousal End ========================================================*/
+
+/*============================================================= School details section start ========================================================*/
+.school-details {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-color: aqua;
+    background: linear-gradient(to top, rgb(238, 243, 253) 50%, white 50%);
+    margin-top: 200px;
+}
+
+.details-box {
+    height: 200px;
+    width: 25%;
+    box-sizing: border-box;
+    border: 1px rgb(233, 224, 224);
+    box-shadow: -2px 4px 5px 9px #eef3f3;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    margin-left: 40px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.details-image {
+    margin-top: -71px;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(248, 198, 173);
+    transform: rotate(46deg);
+    margin-left: 141px;
+    border-radius: 10px;
+}
+
+.details-image img {
+    height: 70px;
+    width: 70px;
+    transform: rotate(-47deg);
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-top: 15px;
+    margin-right: -1px;
+}
+
+.details-box:nth-child(3) img {
+    width: 50px;
+}
+
+.details-box:nth-child(2) .details-image {
+    background-color: rgb(149, 195, 222);
+}
+
+.details-box:nth-child(3) .details-image {
+    background-color: rgb(144, 215, 180);
+}
+
+.details-box h1 {
+    margin-top: 38px;
+    font-size: 54px;
+}
+
+.details-box p {
+    font-size: 25px;
+}
+
+/*============================================================= School details section end ========================================================*/
+
+
+/*============================================================= Feature Section Start ========================================================*/
+
+.feature {
+    width: 100%;
+    background-color: rgb(238, 243, 253);
+    padding-top: 123px;
+    height: 780px;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 80px;
+}
+
+/*============================================================= Feature Section End ========================================================*/
+
+
+/*============================================================= About us Section start ========================================================*/
+
+.about-us {
+    width: 100%;
+    display: flex;
+    margin-top: 80px;
+}
+
+.about-us-content {
+    width: 52%;
+
+}
+
+.about-us-image {
+    width: 48%;
+}
+
+.about-us-img {
+    z-index: 2;
+    position: relative;
+}
+
+.about-us-image img {
+    width: 545px;
+    height: 500px;
+    border-radius: 25px;
+}
+
+.about-us-image .box-background {
+    width: 200px;
+    height: 180px;
+    background-color: rgb(248, 198, 173);
+    transform: rotate(-47deg);
+    position: absolute;
+    border-radius: 20px;
+    margin-top: -133px;
+    margin-left: 421px;
+}
+
+.content-upper {
+    margin-left: 72px;
+}
+
+.content-upper p:nth-child(1) {
+    color: #14539a;
+    font-size: 23px;
+}
+
+.content-upper p:nth-child(3) {
+    width: 88%;
+    margin-bottom: 38px;
+}
+
+.content-upper h1 {
+    width: 62%;
+    font-size: 41px;
+    line-height: 42px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
+
+.about-us-content .content-lower {
+    display: flex;
+    margin: auto;
+    /* justify-content: center; */
+    align-items: center;
+    margin-left: 72px;
+}
+
+.about-us-content .content-lower img {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.about-us-content .content-lower h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.about-us-content .content-lower .our-mission,
+.our-vision {
+    width: 268px;
+    height: 469px;
+    box-sizing: border-box;
+    /* border: 2px solid rgb(148, 131, 131); */
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 30px;
+    box-shadow: 2px 3px 10px 3px rgb(220, 214, 214);
+    cursor: pointer;
+}
+
+.about-us-content .content-lower .our-mission,
+.our-vision p {
+    text-align: justify;
+}
+
+.about-us-content .content-lower .our-mission:hover {
+    background-color: rgba(172, 193, 247, 1);
+    color: black;
+    transform: scale(1.02);
+    transition: all 0.6s ease-in-out;
+}
+
+.about-us-content .content-lower .our-mission:hover div {
+    background-color: white;
+    transform: scale(1.02);
+    transition: all 0.6s ease-in-out;
+}
+
+.about-us-content .content-lower .our-vision:hover {
+    background-color: rgba(172, 193, 247, 1);
+    color: black;
+    transform: scale(1.02);
+    transition: all 0.6s ease-in-out;
+}
+
+.about-us-content .content-lower .our-vision:hover div {
+    background-color: white;
+    transform: scale(1.02);
+    transition: all 0.6s ease-in-out;
+}
+
+.about-us-content .content-lower .our-vision div {
+    width: 90px;
+    height: 80px;
+    background-color: rgba(172, 193, 247, 1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+.about-us-content .content-lower .our-mission div {
+    width: 90px;
+    height: 80px;
+    border-radius: 5px;
+    background-color: rgba(172, 193, 247, 1);
+    margin-bottom: 20px;
+}
+
+/*============================================================= About us Section end ========================================================*/
+
+
+/*============================================================= map section start ========================================================*/
+.map-section {
+    width: 100%;
+    background-color: rgb(238, 243, 253);
+    padding-top: 100px;
+    margin-top: 100px;
+    height: 1160px;
+}
+
+.map-section-div {
+    display: flex;
+    width: 90%;
+    border: 2px solid white;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px -1px rgb(248, 244, 244);
+    background-color: white;
+    padding-top: 80px;
+}
+
+.india-map {
+    width: 58%;
+}
+
+.analysis {
+    width: 42%;
+}
+
+.container {
+    width: 538px;
+    margin: auto;
+    height: 564px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.container .svg-map {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+path {
+    stroke: white;
+    fill: rgba(146, 194, 245, 0.566) !important;
+
+    transition: fill .4s ease;
+}
+
+path:hover {
+    stroke: #002868 !important;
+    stroke-width: 2px;
+    stroke-linejoin: round;
+    fill: #002868 !important;
+    cursor: pointer;
+}
+
+#details-box {
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 14px;
+    position: fixed;
+    color: rgb(24, 23, 23);
+    background-color: #e2d4d4;
+    width: fit-content;
+    transform: translateX(-50%);
+    transition: opacity .4s ease;
+    z-index: 1;
+}
+
+.analysis-nav {
+    border-radius: 18px;
+    border: 2px solid black;
+    overflow: hidden;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.analysis-nav ul {
+    display: flex;
+    width: 105%;
+    height: 40px;
+}
+
+.analysis-nav ul li {
+    list-style: none;
+    width: 32%;
+    height: 100%;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.analysis-nav ul li:nth-child(1) {
+    background-color: #14539a;
+    color: white;
+}
+
+.analysis-nav ul li:hover {
+    background-color: #14539a;
+    color: white;
+}
+
+.analysis .para {
+    width: 71%;
+    margin-bottom: 20px;
+    word-spacing: 3px;
+    margin-left: 9px;
+}
+
+/* .states-selection{
+    width:60%;
+} */
+.states-selection select {
+    width: 57%;
+    height: 35px;
+    border-radius: 10px;
+    background-color: rgb(241, 238, 238);
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.states-selection select:focus {
+    outline: none;
+}
+
+.state-data {
+    width: 90%;
+    height: 450px;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(226, 217, 217);
+    margin-bottom: 40px;
+}
+
+.state-data table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.state-data table tr {
+    height: 35px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.state-data table tr td {
+    border: 3px;
+}
+
+.state-data table tr:nth-child(even) {
+    background-color: rgb(223, 225, 226);
+
+}
+
+.state-data table tr:nth-child(odd) {
+    /* background-color: rgb(244, 249, 249); */
+    background-color: #e8eefd;
+}
+
+.state-data table tr:nth-child(1) {
+    background-color: rgb(248, 198, 173);
+    height: 50px;
+    font-size: 18px;
+    border-top-right-radius: 20px;
+}
+
+.details-s-box {
+    margin-bottom: 31px;
+    width: 130px;
+    text-align: center;
+    margin-right: 86px;
+}
+
+.details-s-box h1 {
+    color: #14539a;
+}
+
+.third-last {
+    width: 200px;
+}
+
+/*============================================================= Map Section end ========================================================*/
+
+
+/*============================================================= Process Section Start ========================================================*/
+.process-section {
+    background-color: white;
+    display: flex;
+    padding-top: 123px;
+    height: 780px;
+}
+
+.process-image {
+    width: 55%;
+    margin-left: 30px;
+}
+
+.process-theory {
+    width: 45%;
+}
+
+.process-section-img img {
+    width: 545px;
+    height: 500px;
+    border-radius: 25px;
+}
+
+.process-section .box-background {
+    width: 200px;
+    height: 180px;
+    background-color: rgb(167, 240, 200);
+    transform: rotate(-47deg);
+    position: absolute;
+    border-radius: 20px;
+    margin-top: -133px;
+    margin-left: 82px;
+}
+
+.process-section-img {
+    margin-left: 185px;
+    z-index: 2;
+    position: relative;
+}
+
+/* .process-theory p:nth-child(1){
+    color: rgb(8, 8, 111);
+    font-size: 20px;
+} */
+.first-p {
+    color: #14539a;
+    font-size: 20px;
+}
+
+.process-theory p:nth-child(3) {
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.process-theory h1 {
+    width: 80%;
+    line-height: 46px;
+    font-size: 44px;
+    margin-top: 20px;
+}
+
+.process-theory ul li {
+    list-style: none;
+    width: 90%;
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: black;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-weight: 100;
+}
+
+.process-theory ul li p {
+    font-weight: 100;
+    opacity: 0.8;
+}
+
+.process-theory ul li i {
+    font-size: 25px;
+    margin-right: 20px;
+    color: #14539a;
+}
+
+/*============================================================= Process Section end ========================================================*/
+
+
+/*============================================================= People Say Section start ========================================================*/
+
+.people-say {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.people-say p {
+    color: #14539a;
+}
+
+.quotes-box-row {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.quotes-box {
+    width: 28%;
+    box-sizing: border-box;
+    text-align: left;
+    margin-left: 30px;
+    box-shadow: 1px 2px 2px 2px rgb(225, 222, 222);
+    padding: 20px;
+    margin-top: 65px;
+    border-radius: 8px;
+}
+
+.quotes-box p:nth-child(2) {
+    color: black;
+    margin-top: -54px;
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.quotes-box .bg-image img {
+    width: 70px;
+    height: 70px;
+    opacity: 0.2;
+    z-index: -11;
+    position: relative;
+    margin-top: -20px;
+}
+
+.quotes-box hr {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.quotes-box p:nth-child(5) {
+    color: black;
+}
+
+/*============================================================= People Say Section End ========================================================*/
+
+/*============================================================= Footer Section start ========================================================*/
+
+.footer {
+    background-color: #14539a;
+    color: white;
+    margin: auto;
+    width: 100%;
+    height: 530px;
+    margin-top: 100px;
+    padding-top: 50px;
+}
+
+.footer-upper {
+    display: flex;
+    margin: auto;
+    width: 80%;
+}
+
+.footer-first {
+    width: 30%;
+    margin: auto;
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+.footer-first p {
+    opacity: 0.9;
+}
+
+.footer-first .footer-image {
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.footer-first .footer-image img {
+    width: 150px;
+    height: 100px;
+}
+
+.footer-second {
+    width: 10%;
+    margin: auto;
+    margin-top: 0px;
+}
+
+.footer-second ul {
+    margin-top: 20px;
+}
+
+.footer-second li {
+    list-style: none;
+    opacity: 0.9;
+    height: 35px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.footer-third {
+    width: 23%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.footer-third div {
+    display: flex;
+    align-items: center;
+    opacity: 0.9;
+    margin-top: 20px;
+}
+
+.footer-third div i {
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.footer-third h3:nth-child(5) {
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.footer-third i {
+    font-size: 30px;
+    color: #a9c5f6;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.footer-lower {
+    display: flex;
+    border-top: 1px solid white;
+    width: 73%;
+    margin: auto;
+    font-size: 15px;
+}
+
+.footer-lower div {
+    width: 50%;
+}
+
+.face:hover {
+    color: #003cff;
+}
+
+.tweet:hover {
+    color: #00ccff;
+}
+
+.yt:hover {
+    color: #ff0e0e;
+}
+
+
+/*============================================================= Footer Section End ========================================================*/
+
+
+@media only screen and (max-width: 1300px) {
+
+    body {
+        width: 139%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navlist .list-item {
+        flex-direction: column;
+        font-size: 40px;
+
+    }
+
+    .navlist .list-item .item {
+        font-size: 58px;
+        height: 100%;
+    }
+
+    .dropdown {
+        font-size: 58px;
+        margin-top: 82px;
+    }
+
+    .navlist .list-item a {
+        margin-top: 70px;
+        height: 120px;
+    }
+
+    .dropdown .dropdown-btn {
+        font-size: 65px;
+        width: 250px;
+    }
+
+    .dropdown-options {
+        height: 0px;
+        opacity: 0%;
+    }
+
+    .dropdown:hover .dropdown-options {
+        width: 450px;
+        z-index: -1;
+        position: relative;
+        transition: all 0.6s ease-in-out;
+    }
+
+    .dropdown button {
+        font-size: 40px;
+    }
+
+    .nav-btn {
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .school-details {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background: white;
+    }
+
+    .school-details .details-box {
+        width: 90%;
+        height: 500px;
+        margin-top: 90px;
+        margin-bottom: 80px;
+        font-size: 40px;
+    }
+
+    .school-details .details-box .details-image {
+        margin-left: 482px;
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        margin-top: -93px;
+    }
+
+    .details-image img {
+        width: 149px;
+        height: 154px;
+        margin-top: 1px;
+        margin-right: 50px
+    }
+
+    .details-box:nth-child(3) img {
+        width: 150px;
+        height: 150px;
+        margin-top: 13px;
+        margin-left: 10px;
+    }
+
+    .details-box h1 {
+        font-size: 160px;
+    }
+
+    .details-box p {
+        font-size: 70px;
+    }
+
+    .about-us {
+        flex-direction: column;
+        width: 100%;
+        height: 3850px;
+    }
+
+    .about-us-content {
+        width: 100%;
+    }
+
+    .about-us .content-lower {
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .content-upper p:nth-child(1) {
+        font-size: 59px;
+    }
+
+    .content-upper h1 {
+        font-size: 74px;
+        width: 100%;
+        line-height: normal;
+    }
+
+    .content-upper p:nth-child(3) {
+        width: 96%;
+        margin-bottom: 38px;
+        font-size: 45px;
+        text-align: justify;
+    }
+
+    .about-us-content .content-lower .our-mission,
+    .our-vision {
+        width: 92%;
+        margin-right: 0px;
+        padding: 35px;
+        height: auto;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        border-radius: 15px;
+        padding-bottom: 50px;
+    }
+
+    .about-us-content .content-lower .our-mission div {
+        width: 250px;
+        height: 250px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    .about-us-content .content-lower img {
+        width: 172px;
+        height: 172px;
+        margin-left: 31px;
+        margin-top: 45px;
+    }
+
+    .about-us-content .content-lower h1 {
+        font-size: 82px;
+    }
+
+    .content-lower p {
+        font-size: 45px;
+    }
+
+    .about-us-content .content-lower .our-vision div {
+        width: 250px;
+        height: 250px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    .about-us-image {
+        width: 92%;
+        margin: auto;
+        margin-top: 80px;
+        height: 1000px;
+    }
+
+    .about-us-img {
+        width: 100%;
+        height: 131%;
+    }
+
+    .about-us-image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 85px;
+    }
+
+    .about-us-image .box-background {
+        display: none;
+    }
+
+
+
+    .map-section {
+        height: 4225px;
+    }
+
+    .map-section-div {
+        width: 100%;
+        background-color: rgb(238, 243, 253);
+        border: 0px solid white;
+        flex-direction: column-reverse;
+    }
+
+    .analysis {
+        width: 100%;
+        height: 2630px;
+    }
+
+    .analysis-nav {
+        border-radius: 50px;
+        width: 93%;
+        margin-bottom: 20px;
+        margin: auto;
+        height: 170px;
+    }
+
+    .analysis-nav ul {
+        display: flex;
+        width: 105%;
+        height: 100%;
+    }
+
+    .analysis-nav ul li {
+        font-size: 51px;
+        padding-top: 45px;
+    }
+
+    .analysis-nav ul li:nth-child(3) {
+        padding-top: 30px;
+        line-height: 54px;
+    }
+
+    .analysis .para {
+        width: 82%;
+        margin: auto;
+        font-size: 51px;
+        margin-left: 67px;
+        margin-top: 50px;
+    }
+
+    .states-selection select {
+        width: 90%;
+        height: 85px;
+        border-radius: 20px;
+        font-size: 41px;
+        padding-left: 50px;
+        padding-right: 10px;
+        margin: auto;
+        margin-left: 70px;
+        appearance: none;
+        margin-top: 50px;
+    }
+
+    .state-data {
+        width: 90%;
+        height: 450px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .state-data table {
+        border-radius: 35px;
+        margin-top: 60px;
+    }
+
+    .state-data table tr:nth-child(1) {
+        height: 150px;
+        font-size: 51px;
+        border-top-right-radius: 40px;
+    }
+
+    .state-data table tr:nth-child(1) td:nth-child(3) {
+        width: 25%;
+    }
+
+    .state-data table tr {
+        font-size: 41px;
+        height: 115px;
+    }
+
+    .details-analysis-box-container {
+        margin-top: 1000px;
+        font-size: 51px;
+    }
+
+    .details-s-box {
+        width: 590px;
+    }
+
+    .third-last {
+        font-size: 51px;
+        width: 620px;
+        margin-top: 55px;
+    }
+
+    .india-map {
+        width: 100%;
+        height: 1360px;
+    }
+
+    .container {
+        width: 1210px;
+        margin: auto;
+        height: 1360px;
+    }
+
+
+
+    .process-section {
+        flex-direction: column;
+        width: 100%;
+        height: 3000px;
+    }
+
+    .process-image {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .process-section-img {
+        width: 92%;
+        margin: auto;
+    }
+
+    .process-section-img img {
+        width: 100%;
+        height: 1120px;
+        border-radius: 80px;
+    }
+
+    .process-section .box-background {
+        display: none;
+    }
+
+    .process-theory {
+        width: 92%;
+        margin: auto;
+    }
+
+    .first-p {
+        font-size: 59px;
+        margin-top: 50px;
+    }
+
+    .process-theory h1 {
+        width: 100%;
+        line-height: 112px;
+        font-size: 103px;
+        margin-top: 20px;
+    }
+    .process-theory p:nth-child(3) {
+        font-size: 47px;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .process-theory ul li{
+        font-size: 47px;
+        width: 96%;
+        text-align: justify;
+        margin-top: 30px;
+    }
+    .process-theory ul li i {
+        font-size: 78px;
+        margin-right: 40px;
+        
+    }
+}
+
+.demo {
+    width: 0px;
+    height:0px;
+    position: absolute;
+    height: 100%;
+    background-color: rgb(162, 156, 156);
+    margin-left: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+.hide1 {
+    /* display: none; */
+    width: 0px;
+    height: 0px;
+    transition: all 0.6s ease-in-out;
+}
+
+.show1 {
+    /* display: block; */
+    height:500px;
+    width:500px;
+    transition: all 0.6s ease-in-out;
+
+}
+.delete {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    padding-top: 0px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background-color: #ef2323;
+}
+
+.navlist-show {
+    z-index: 2;
+    opacity: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.navlist-hide {
+    z-index: -1;
+    opacity: 0%;
+    transition: all 0.6s ease-in-out;
+}
+
+.navbar-height {
+    height: 1342px;
+    transition: all 0.6s ease-in-out;
+    overflow: hidden;
+}
+
+.navbar-height-dec {
+    height: 80px;
+    transition: all 0.6s ease-in-out;
+}
+
+.ham-position {
+    margin-top: -478px;
+    transition: all 0.6s ease-in-out;
+}
+
+.dropdown-height {
+    height: 641px;
+    transition: all 0.6s ease-in-out;
+    position: relative;
+    opacity: 100%;
+    overflow: hidden;
+}
